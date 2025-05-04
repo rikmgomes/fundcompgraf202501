@@ -21,3 +21,11 @@ fundcompgraf202501/
 ├── .gitignore
 └── README.md
 ```
+
+### 📚 Referências
+* https://learnopengl.com/#!Getting-started/Hello-Triangle
+* https://learnopengl.com/#!Getting-started/Shaders
+* https://antongerdelan.net/opengl/hellotriangle.html
+* AKENINE-MÖLLER, Tomas; HAINES, Eric; HOFFMAN, Naty. Real-Time Rendering. 4. ed. Natick, MA: A. K. Peters, 2018. Cap. 2 – The Graphics Rendering Pipeline, p. 11–27.
+* Playlist sobre OpenGL Moderna: [The Cherno – YouTube – OpenGL](https://www.youtube.com/playlist?list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2)
+* Playlist sobre C++: [The Cherno – YouTube – C++](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
