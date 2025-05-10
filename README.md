@@ -21,7 +21,7 @@ fundcompgraf202501/
 │   ├── Common
 │   ├── assets/tex
 │   ├── include/glad
-│   ├── src (Arquivo .cpp com o protótipo do jogo 2d simples)
+│   ├── src (Arquivo TGA.cpp com o protótipo do jogo 2d simples)
 │   ├── .gitignore
 │   ├── CMakeLists.txt
 │   └── README.md (Explicações)
