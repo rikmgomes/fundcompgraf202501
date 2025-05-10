@@ -17,6 +17,15 @@ fundcompgraf202501/
 │   ├── CMakeLists.txt
 │   └── README.md (Explicações + Respostas Exercícios 1-5)
 │
+├── Trabalho Grau A/
+│   ├── Common
+│   ├── assets/tex
+│   ├── include/glad
+│   ├── src (Arquivo TGA.cpp com o protótipo do jogo 2d simples)
+│   ├── .gitignore
+│   ├── CMakeLists.txt
+│   └── README.md (Explicações)
+│
 ├── .gitattributes
 ├── .gitignore
 └── README.md
