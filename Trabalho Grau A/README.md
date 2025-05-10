@@ -16,11 +16,14 @@ fundcompgraf202501/
 │
 ├── Trabalho Grau A/
 │   ├── Common
-│   ├── assets/tex
+│   └── assets
+│     ├── sprites (Spritesheets -> ovo e pássaro)
+│     └── tex (Texturas utilizadas -> background)
 │   ├── include/glad
 │   ├── src (Arquivo TGA.cpp com o protótipo do jogo 2d simples)
 │   ├── .gitignore
 │   ├── CMakeLists.txt
+│   ├── apresentacao_slides
 │   └── README.md (Explicações)
 │
 ├── .gitattributes
@@ -37,8 +40,8 @@ O objetivo do trabalho foi desenvolver um protótipo de jogo 2D, utilizando a AP
 ### 🛑 Problemas Enfrentados
 * Acúmulo de variáveis para timers/delta me fizeram generalizar o processo de animação na função updateSprite();
 * Wrap de spritesheet acabava errado no pássaro, precisei fazer correções nos vértices, dimensions e na própria spritesheet para alcançar divisão igual entre os frames;
-* Velocidade de queda ovos multiplicava exponencialmente por lastTime quanto tentar manter a conexão com FPS fixo (precisei eliminar tal multiplicação);
-* Precisão nos .dimensions nos carregamentos (fiz diversas alterações para tudo ficar certinho dos sprites na tela);
+* Velocidade de queda dos ovos multiplicava exponencialmente por lastTime (precisei eliminar tal multiplicação);
+* Precisão nos .dimensions nos carregamentos (fiz diversas alterações para tudo ficar certinho na tela);
 * Ajustes de .vel tanto para obj quanto para spr1.
 
 ### 📗 Melhorias Futuras
