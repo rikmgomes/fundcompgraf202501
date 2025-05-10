@@ -19,11 +19,14 @@ fundcompgraf202501/
 │
 ├── Trabalho Grau A/
 │   ├── Common
-│   ├── assets/tex
+│   └── assets
+│     ├── sprites (Spritesheets -> ovo e pássaro)
+│     └── tex (Texturas utilizadas -> background)
 │   ├── include/glad
 │   ├── src (Arquivo TGA.cpp com o protótipo do jogo 2d simples)
 │   ├── .gitignore
 │   ├── CMakeLists.txt
+│   ├── apresentacao_slides
 │   └── README.md (Explicações)
 │
 ├── .gitattributes
