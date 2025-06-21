@@ -1,26 +1,22 @@
-# Trabalho Grau A
+# Trabalho Grau B
 - Nome: Ricardo Moreira Gomes.
-- Descrição: Repositório para o Trabalho do Grau A.
+- Descrição: Repositório para o Trabalho do Grau B.
 
 ### 📁 Estrutura do Projeto
 ```text
 fundcompgraf202501/
-├── Lista 1/
+├── Lista 1
+├── Trabalho Grau A
+├── Trabalho Grau B/
 │   ├── Common
-│   ├── assets/tex
+│   ├── assets
+│   └── build
+│     ├── cena.txt (arquivo que para save/load da cena do editor)
+│     ├── change_color.wav (sfx)
+│     └── show_hide.wav (sfx)
 │   ├── include/glad
-│   ├── src (Exercícios 6-10 no formato .cpp)
-│   ├── .gitignore
-│   ├── CMakeLists.txt
-│   └── README.md (Explicações + Respostas Exercícios 1-5)
-│
-├── Trabalho Grau A/
-│   ├── Common
-│   └── assets
-│     ├── sprites (Spritesheets -> ovo e pássaro)
-│     └── tex (Texturas utilizadas -> background)
-│   ├── include/glad
-│   ├── src (Arquivo TGA.cpp com o protótipo do jogo 2d simples)
+│   └── src
+│     └── Voxel.cpp (entrega do trabalho com o protótipo do Editor Voxel)
 │   ├── .gitignore
 │   ├── CMakeLists.txt
 │   ├── apresentacao_slides
@@ -35,16 +31,25 @@ fundcompgraf202501/
 A pasta funciona como um projeto completo. Para que tudo funcione corretamente, é necessário seguir as instruções contidas nos `READ.me` tanto do repositório como um todo quanto do diretório `Lista 1`.
 
 ### 📚 Proposta
-O objetivo do trabalho foi desenvolver um protótipo de jogo 2D, utilizando a API Gráfica OpenGL (moderna), aplicando conceitos vistos em aula sobre desenho de primitivas, transformações geométricas, projeção ortográfica e mapeamento de textura. O jogo que desenvolvi segue uma proposta arcade no estilo do jogo Catch do Atari (1977). Você controla um pássaro (WASD ou setinhas) e seu objetivo é salvar o maior número de ovos em queda possível (pontuação se encontra no título da janela da aplicação). A cada ovo coletado, sua velocidade diminui e fica mais difícil se movimentar pelos céus do cenário. No momento, o jogo ainda não tem um fim, mas atualizações futuras implementarão isso.
+O objetivo do trabalho foi desenvolver um protótipo de um editor de cenas voxelizadas 3D, utilizando a API Gráfica OpenGL (moderna), aplicando conceitos vistos em aula sobre câmera sintética e tilemaps.
+
+### 🕹️ Instruções de Uso
+- Movimentação da câmera = WASD + Mouse + Scroll (zoom);
+- Movimentação pelo grid do editor = setinhas (eixo x e eixo y) + pgUp/Down (eixo z);
+- Apagar voxel = DELETE;
+- Restaurar voxel = V;
+- Trocar cor do voxel = C;
+- Salvar cena ("cena.txt") = K;
+- Recarregar a cena salva ("cena.txt") = L.
 
 ### 🛑 Problemas Enfrentados
-* Acúmulo de variáveis para timers/delta me fizeram generalizar o processo de animação na função updateSprite();
-* Wrap de spritesheet acabava errado no pássaro, precisei fazer correções nos vértices, dimensions e na própria spritesheet para alcançar divisão igual entre os frames;
-* Velocidade de queda dos ovos multiplicava exponencialmente por lastTime (precisei eliminar tal multiplicação);
-* Precisão nos .dimensions nos carregamentos (fiz diversas alterações para tudo ficar certinho na tela);
-* Ajustes de .vel tanto para obj quanto para spr1.
+- Transparência do grid de voxels (necessários ajustes);
+- Movimentação pelo grid pode ser confusa dependendo do ângulo da câmera (wasd x mouse x setas x pgup/down);
+- Problema na rotação de cores;
+- Dificuldade de usar a biblioteca de UI → topo da janela;
+- Dificuldade de encontrar uma biblioteca simples para gerenciamento de áudio entre múltiplos SO → foco no windows;
 
 ### 📗 Melhorias Futuras
-* Parallax com 3 camadas;
-* Pontuação via HUD (possivelmente usando FreeType);
-* Estado de Fim/Gameover (quando tempo acabar, mostra pontuação conforme quantidade de ovos coletados).
+- Implementar UI via FreeType, se possível;
+- Colocar uma textura específica para cada cor da lista;
+- Permitir múltiplos salvamentos de cenas.
