@@ -28,6 +28,16 @@ fundcompgraf202501/
 │   ├── CMakeLists.txt
 │   ├── apresentacao_slides
 │   └── README.md (Explicações)
+│ 
+├── Trabalho Grau B/
+│   ├── Common
+│   ├── assets
+│   ├── include/glad
+│   ├── src (Arquivo Voxel.cpp com o protótipo do Editor Voxel)
+│   ├── .gitignore
+│   ├── CMakeLists.txt
+│   ├── apresentacao_slides
+│   └── README.md (Explicações)
 │
 ├── .gitattributes
 ├── .gitignore
